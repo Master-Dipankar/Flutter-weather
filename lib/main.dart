@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:transaction/pages/transaction2.dart';
+import 'package:weather_app/pages/currentweather.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget{
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context){
     return MaterialApp(
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget{
             backgroundColor:null,
           )
       ),
-      home:const Transaction2(),
+      home:CurrentWeatherPage(),
     );
   }
 }
